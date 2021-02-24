@@ -16,7 +16,7 @@ use App\Http\Controllers\TutoresController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/tutores');
 });
 
 Route::get('/hola', [HelloWorld::class, 'prueba']);
