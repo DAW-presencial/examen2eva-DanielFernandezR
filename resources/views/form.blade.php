@@ -34,7 +34,7 @@
         <div class="row">
             <div class="form-group col-4">
                 <label>Nombre</label>
-                <input type="text" class="form-control {{ $errors->has('nombre_empresa') ? 'error' : '' }}" value="{!! old('nombre_empresa') !!}" name="nombre_empresa" id="nombre_empresa">
+                <input type="text" required class="form-control {{ $errors->has('nombre_empresa') ? 'error' : '' }}" value="{!! old('nombre_empresa') !!}" name="nombre_empresa" id="nombre_empresa">
                 <!-- Error -->
                 @if ($errors->has('nombre_empresa'))
                 <div class="error">
@@ -54,7 +54,7 @@
             </div>
             <div class="form-group col-4">
                 <label>Documento de identidad</label>
-                <input type="text" class="form-control {{ $errors->has('documento_identidad') ? 'error' : '' }}" value="{!! old('documento_identidad') !!}" name="documento_identidad" id="documento_identidad">
+                <input type="text" required class="form-control {{ $errors->has('documento_identidad') ? 'error' : '' }}" value="{!! old('documento_identidad') !!}" name="documento_identidad" id="documento_identidad">
                 <!-- Error -->
                 @if ($errors->has('documento_identidad'))
                 <div class="error">
@@ -64,7 +64,7 @@
             </div>
             <div class="form-group col-4">
                 <label>Documento de identidad</label>
-                <input type="text" class="form-control {{ $errors->has('documento_identidad') ? 'error' : '' }}" value="{!! old('documento_identidad') !!}" name="documento_identidad" id="documento_identidad">
+                <input type="text" required class="form-control {{ $errors->has('documento_identidad') ? 'error' : '' }}" value="{!! old('documento_identidad') !!}" name="documento_identidad" id="documento_identidad">
                 <!-- Error -->
                 @if ($errors->has('documento_identidad'))
                 <div class="error">
@@ -74,7 +74,7 @@
             </div>
             <div class="form-group col-4">
                 <label>Nombre del tutor</label>
-                <input type="text" class="form-control {{ $errors->has('nombre_tutor') ? 'error' : '' }}" value="{!! old('nombre_tutor') !!}" name="nombre_tutor" id="nombre_tutor">
+                <input type="text" required class="form-control {{ $errors->has('nombre_tutor') ? 'error' : '' }}" value="{!! old('nombre_tutor') !!}" name="nombre_tutor" id="nombre_tutor">
                 <!-- Error -->
                 @if ($errors->has('nombre_tutor'))
                 <div class="error">
@@ -84,7 +84,7 @@
             </div>
             <div class="form-group col-4">
                 <label>Primer apellido</label>
-                <input type="text" class="form-control {{ $errors->has('primer_apellido_tutor') ? 'error' : '' }}" value="{!! old('primer_apellido_tutor') !!}" name="primer_apellido_tutor" id="primer_apellido_tutor">
+                <input type="text" required class="form-control {{ $errors->has('primer_apellido_tutor') ? 'error' : '' }}" value="{!! old('primer_apellido_tutor') !!}" name="primer_apellido_tutor" id="primer_apellido_tutor">
                 <!-- Error -->
                 @if ($errors->has('primer_apellido_tutor'))
                 <div class="error">
@@ -104,7 +104,7 @@
             </div>
             <div class="form-group col-4">
                 <label>Pais del documento</label>
-                <input type="text" class="form-control {{ $errors->has('pais_documento') ? 'error' : '' }}" value="{!! old('pais_documento') !!}" name="pais_documento" id="pais_documento">
+                <input type="text" required class="form-control {{ $errors->has('pais_documento') ? 'error' : '' }}" value="{!! old('pais_documento') !!}" name="pais_documento" id="pais_documento">
                 <!-- Error -->
                 @if ($errors->has('pais_documento'))
                 <div class="error">
@@ -114,7 +114,7 @@
             </div>
             <div class="form-group col-4">
                 <label>Provincia</label>
-                <input type="text" class="form-control {{ $errors->has('provincia') ? 'error' : '' }}" value="{!! old('provincia') !!}" name="provincia" id="provincia">
+                <input type="text" required class="form-control {{ $errors->has('provincia') ? 'error' : '' }}" value="{!! old('provincia') !!}" name="provincia" id="provincia">
                 <!-- Error -->
                 @if ($errors->has('provincia'))
                 <div class="error">
@@ -134,7 +134,7 @@
             </div>
             <div class="form-group col-4">
                 <label>Estado del tutor</label>
-                <select class="form-control {{ $errors->has('estado') ? 'error' : '' }}" name="estado" id="estado">
+                <select required class="form-control {{ $errors->has('estado') ? 'error' : '' }}" name="estado" id="estado">
                     <option value="activo" @if (old('estado') == 'activo') selected @endif>Tutor en activo</option>
                     <option value="inactivo" @if (old('estado') == 'inactivo') selected @endif>Tutor inactivo</option>
                 </select>
@@ -156,7 +156,7 @@
             </div>
             <div class="form-group col-4">
                 <label>Email</label>
-                <input type="text" class="form-control {{ $errors->has('email') ? 'error' : '' }}" value="{!! old('email') !!}" name="email" id="email">
+                <input type="text" required class="form-control {{ $errors->has('email') ? 'error' : '' }}" value="{!! old('email') !!}" name="email" id="email">
                 <!-- Error -->
                 @if ($errors->has('email'))
                 <div class="error">
