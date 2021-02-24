@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+   <link rel="stylesheet" type="text/css" href="{{ asset('./css/styles.css') }}">
     <title>Crear tutor</title>
 </head>
 <body>
-<h1 class="container pt-5">Datos de empresa para nuevo Acuerdo  </h1>
+<h1 class="container text-center pt-5">Crear nuevo tutor </h1>
 <h3 class="container"></h3>
 <div class="container mt-5">
     <!-- Success message -->
@@ -30,9 +30,9 @@
     @endif
     <form class="form" method="post" action="{{ route('tutores.store') }}">
         @csrf
-        <h2 class="mb-5">Empresa</h2>
+        <h2 class="mb-5">Tutor nuevo</h2>
         <div class="row">
-            <div class="form-group col-4">
+            <div class="form-group col-12">
                 <label>Nombre de la empresa</label>
                 <input type="text" required class="form-control {{ $errors->has('nombre_empresa') ? 'error' : '' }}" value="{!! old('nombre_empresa') !!}" name="nombre_empresa" id="nombre_empresa">
                 <!-- Error -->
@@ -42,7 +42,7 @@
                 </div>
                 @endif
             </div>
-            <div class="form-group col-4">
+            <div class="form-group col-6">
                 <label>Tipo documento</label>
                 <input type="text" required class="form-control {{ $errors->has('tipo_documento') ? 'error' : '' }}" value="{!! old('tipo_documento') !!}" name="tipo_documento" id="tipo_documento">
                 <!-- Error -->
@@ -52,7 +52,7 @@
                 </div>
                 @endif
             </div>
-            <div class="form-group col-4">
+            <div class="form-group col-6">
                 <label>Documento de identidad</label>
                 <input type="text" required class="form-control {{ $errors->has('documento_identidad') ? 'error' : '' }}" value="{!! old('documento_identidad') !!}" name="documento_identidad" id="documento_identidad">
                 <!-- Error -->
@@ -134,7 +134,7 @@
                 </div>
                 @endif
             </div>
-            <div class="form-group col-4">
+            <div class="form-group col-8">
                 <label>Teléfono</label>
                 <input type="text" class="form-control {{ $errors->has('telefono') ? 'error' : '' }}" value="{!! old('telefono') !!}" name="telefono" id="telefono">
                 <!-- Error -->
@@ -144,7 +144,7 @@
                 </div>
                 @endif
             </div>
-            <div class="form-group col-4">
+            <div class="form-group col-12">
                 <label>Email</label>
                 <input type="text" required class="form-control {{ $errors->has('email') ? 'error' : '' }}" value="{!! old('email') !!}" name="email" id="email">
                 <!-- Error -->
