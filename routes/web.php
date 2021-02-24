@@ -19,6 +19,11 @@ Route::get('/', function () {
     return redirect('/tutores');
 });
 
-Route::get('/hola', [HelloWorld::class, 'prueba']);
+Route::get('/tutores', [TutoresController::class, 'index']);
+Route::get('/tutores/create', [TutoresController::class, 'create']);
+Route::post('/tutores/create', [TutoresController::class, 'store'])->name('tutores.store');
 
-Route::Resource('tutores', TutoresController::class);
+// Si quieres añadir todas poner linea de abajo (descomentar)
+//Route::Resource('tutores', TutoresController::class);
+
+// Route::get('/hola', [HelloWorld::class, 'prueba']);
