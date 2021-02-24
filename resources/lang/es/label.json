@@ -1,0 +1,14 @@
+{
+    "Company name": "Nombre de la empresa",
+    "Document Type":"Tipo del documento",
+    "Identification document":"Documento de identidad",
+    "Tutor name":"Nombre del tutor",
+    "Surname":"Primer apellido",
+    "Second surname":"Segundo apellido",
+    "Country of the document":"Pais del documento",
+    "Province":"Provincia",
+    "Municipality":"Municipio",
+    "Tutor status":"Estado del tutor",
+    "Phone":"Teléfono",
+    "Email":"Correo"
+}
