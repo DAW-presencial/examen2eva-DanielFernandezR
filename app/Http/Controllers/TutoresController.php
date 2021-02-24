@@ -15,7 +15,7 @@ class TutoresController extends Controller
      */
     public function index()
     {
-        //
+        return redirect('tutores/create');
     }
 
     /**
@@ -25,7 +25,7 @@ class TutoresController extends Controller
      */
     public function create()
     {
-        //
+        return view('form');
     }
 
     /**

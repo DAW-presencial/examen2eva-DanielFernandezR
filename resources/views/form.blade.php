@@ -33,7 +33,7 @@
         <h2 class="mb-5">Empresa</h2>
         <div class="row">
             <div class="form-group col-4">
-                <label>Nombre</label>
+                <label>Nombre de la empresa</label>
                 <input type="text" required class="form-control {{ $errors->has('nombre_empresa') ? 'error' : '' }}" value="{!! old('nombre_empresa') !!}" name="nombre_empresa" id="nombre_empresa">
                 <!-- Error -->
                 @if ($errors->has('nombre_empresa'))
@@ -44,21 +44,11 @@
             </div>
             <div class="form-group col-4">
                 <label>Tipo documento</label>
-                <input type="text" class="form-control {{ $errors->has('tipo_documento') ? 'error' : '' }}" value="{!! old('tipo_documento') !!}" name="tipo_documento" id="tipo_documento">
+                <input type="text" required class="form-control {{ $errors->has('tipo_documento') ? 'error' : '' }}" value="{!! old('tipo_documento') !!}" name="tipo_documento" id="tipo_documento">
                 <!-- Error -->
                 @if ($errors->has('tipo_documento'))
                 <div class="error">
                     {{ $errors->first('tipo_documento') }}
-                </div>
-                @endif
-            </div>
-            <div class="form-group col-4">
-                <label>Documento de identidad</label>
-                <input type="text" required class="form-control {{ $errors->has('documento_identidad') ? 'error' : '' }}" value="{!! old('documento_identidad') !!}" name="documento_identidad" id="documento_identidad">
-                <!-- Error -->
-                @if ($errors->has('documento_identidad'))
-                <div class="error">
-                    {{ $errors->first('documento_identidad') }}
                 </div>
                 @endif
             </div>
