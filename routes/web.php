@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloWorld;
+use App\Http\Controllers\TutoresController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/hola', [HelloWorld::class, 'prueba']);
+
+Route::Resource('tutores', TutoresController::class);
