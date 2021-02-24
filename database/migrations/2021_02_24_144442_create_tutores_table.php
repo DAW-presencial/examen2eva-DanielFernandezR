@@ -24,7 +24,7 @@ class CreateTutoresTable extends Migration
             $table->string('pais_documento');
             $table->string('provincia');
             $table->string('municipio')->nullable();
-            $table->enum('estado', ['tutor en activo', 'tutor inactivo']);
+            $table->enum('estado', ['activo', 'inactivo']);
             $table->string('telefono')->nullable();
             $table->string('email');
             $table->timestamps();
